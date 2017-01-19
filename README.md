@@ -101,10 +101,10 @@ Each question needs to be reviewed by a moderator.
 ##### `balance all`      show all the tip jars (must be enabled in code)
 
 ##### `balance check`    show the balance of a specific user (must be enabled in code) 
-eg;        `dashbot balance check @user` 
+eg;        `pivxbot balance check @user` 
 
 
-##### `whisper`         Send a message in a private channel to a user as dashbot.
+##### `whisper`         Send a message in a private channel to a user as pivxbot.
 Use case :moderator warning.
 
 
@@ -121,7 +121,7 @@ Use case :moderator warning.
 
 ##### `quiz delete _question number_`   Delete a question.
 
-##### `quiz reward _question number_`   Set/change reward for a question (also approves the question). @dashbot will ask amount.
+##### `quiz reward _question number_`   Set/change reward for a question (also approves the question). @pivxbot will ask amount.
 
 ##### `quiz star`    Start a quiz.
 

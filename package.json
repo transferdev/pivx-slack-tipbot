@@ -9,7 +9,7 @@
     "bitcoinjs-lib": "~1.4.3",
     "botkit": "^0.2.2",
     "debug": "^2.2.0",
-    "lodash": "^3.1.0",
+    "lopivx": "^3.1.0",
     "minimist": "^1.1.0",
     "mongoose": "^4.5.7",
     "mongoose-auto-increment": "^5.0.1",
@@ -33,7 +33,7 @@
     "slack",
     "slackbot",
     "tipbot",
-    "dash"
+    "pivx"
   ],
   "author": "Naruby Riverlione <naruby.riverlione@gmail.com",
   "license": "MIT",
