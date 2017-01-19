@@ -23,7 +23,7 @@ const tipbotTxt = {
 // 'help_withdraw':
         '*withdraw*\ttell the bot to withdraw an amount to an address. \n' +
 '\t\t\t\t\tYou can also use _all_ to withdraw your complete balance (minus the tx fee) \n' +
-'\t\t_@PivxBot withdraw 1 PIVX to Xdice8EMZmqKvrGE4Qc9bUFf9PX3xaYDp!_',
+'\t\t_@PivxBot withdraw 1 PIVX to D8Sf2wpaMyarjCbnwqskXaGAS6jwKSBA1B',
 
 // 'help_currencies':
         '*currencies*\task the bot for a list of supported currencies.\n' +

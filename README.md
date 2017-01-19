@@ -18,8 +18,8 @@ Easily transfer money between team members on your Slack channel.
 
 
 ### Install TipBot
- - `git clone https://github.com/narubyriverlione/slack-tipbot`
- - `cd slack-tipbot`
+ - `git clone https://github.com/pivx-project/pivx-slack-tipbot`
+ - `cd pivx-slack-tipbot`
  - `npm install`
 
 
@@ -75,7 +75,7 @@ eg; `@tipbot I'd like to deposit to my tip jar`
 
 ##### `withdraw`    -  *tell the bot you want to withdraw to an address*
 after you've requested the withdraw the bot will confirm with you if it's OK, replying with `yes`, `ok` or `sure` will make the transaction happen.
-eg; `@tipbot I want to withdraw 0.5 Pivx to 1dice8EMZmqKvrGE4Qc9bUFf9PX3xaYDp`
+eg; `@tipbot I want to withdraw 0.5 Pivx to D8Sf2wpaMyarjCbnwqskXaGAS6jwKSBA1B`
 
 ##### `currencies` - ask the bot for a list of supported currencies. 
 eg; `_@tipbot what currencies do you know?`
