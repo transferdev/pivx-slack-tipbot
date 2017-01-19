@@ -12,7 +12,7 @@ const tipbotTxt = {
 
 //'help_send':
         '*send*\t\t\t\ttell the bot to send coins to someone; \n' +
-'\t\t_@PivxBot send 0.1 DASH to @someone_ \n' +
+'\t\t_@PivxBot send 0.1 PIVX to @someone_ \n' +
 '\t\t_aliases: give, tip_ \n' +
 '\t\t\t\tWorks also with major fiat currencies (use *currencies* command to see the list); \n' +
 '\t\t_@PivxBot give 4 USD to @someone_',
@@ -23,7 +23,7 @@ const tipbotTxt = {
 // 'help_withdraw':
         '*withdraw*\ttell the bot to withdraw an amount to an address. \n' +
 '\t\t\t\t\tYou can also use _all_ to withdraw your complete balance (minus the tx fee) \n' +
-'\t\t_@PivxBot withdraw 1 DASH to Xdice8EMZmqKvrGE4Qc9bUFf9PX3xaYDp!_',
+'\t\t_@PivxBot withdraw 1 PIVX to Xdice8EMZmqKvrGE4Qc9bUFf9PX3xaYDp!_',
 
 // 'help_currencies':
         '*currencies*\task the bot for a list of supported currencies.\n' +
@@ -38,7 +38,7 @@ const tipbotTxt = {
 
 // 'help_convert':
         '*convert*\t\task the bot to convert between a particular currency and Pivx (or visa versa).\n' +
-'\t\t_@DashBot 0.03 DASH to GBP_ \t or \t _@PivxBot 15 EURO to DASH_\n',
+'\t\t_@DashBot 0.03 PIVX to GBP_ \t or \t _@PivxBot 15 EURO to PIVX_\n',
 
 // 'help_rain':
 // '*rain*\t\tcheck the available rain and threshold. \n ' +
@@ -132,7 +132,7 @@ const tipbotTxt = {
     'CurrenciesTitle': 'Price info from coinmarketcap \n',
     'SupportedCurrenciesFull': 'Supported currencies: ',
     'SupportedSymbols': 'use these currency abbreviations/symbols in your message: *',
-    'SupportedBase': 'And does it need saying: *DASH* is supported !',
+    'SupportedBase': 'And does it need saying: *PIVX* is supported !',
 
 // // RAIN
     'RainReplacedBySun': 'Really you want rain? It\'s summertime ! _sorry southern hemisphere_ \n ' +
@@ -150,7 +150,7 @@ const tipbotTxt = {
 // 'RainPerUser1': ' raindrops of ',
 // 'RainPerUser2': ' pivx would fall',
 // 'RainClouds': ':rain_cloud: :rain_cloud: :rain_cloud:',
-// 'RainNow': '*And the Pivx Rain Gods said _LET IT RAIN DASH_* \n' +
+// 'RainNow': '*And the Pivx Rain Gods said _LET IT RAIN PIVX_* \n' +
 // '_Each current online user will get a raindrop of_',
 // 'RainCannotFindRainAccount1': 'Could not find the Rain user : '*',
 // 'RainCannotFindRainAccount2': '*' \n Ask the Slack Admin(s) if the Rain feature is correctly setup.',

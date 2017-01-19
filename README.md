@@ -84,7 +84,7 @@ eg; `_@tipbot what currencies do you know?`
 eg; `_@tipbot price in USD!` 
 
 ##### `convert`    - ask the bot to convert between a particular currency and Pivx (or visa versa)
-eg; `@tipbot 1 USD to EUR!_​  or; ​_@tipbot 0.03 DASH to GBP`
+eg; `@tipbot 1 USD to EUR!_​  or; ​_@tipbot 0.03 PIVX to GBP`
 
 ##### `sun`       - check the available sunshine. 
 Each user that has tipped another user will receive a _sunray_ (read: free Pivx) from the sun fund.
