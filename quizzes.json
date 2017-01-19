@@ -4,5 +4,5 @@
 {"_id":{"$oid":"57b76288be2e58b44dae78c6"},"question":"What coin codebase is Pivx based on?","answer":"Bitcoin","reward":1,"__v":0,"qaNumber":5.0}
 {"_id":{"$oid":"57b762dabe2e58b44dae78c7"},"question":"How many minutes pass between Pivx blocks (on average)?","answer":"2.5","reward":0.01,"__v":0,"qaNumber":6.0}
 {"_id":{"$oid":"57c1a124290bbdb308828913"},"qaNumber":11,"question":"Who started the pivx slack?","answer":"Buster","reward":2,"__v":0}
-{"_id":{"$oid":"57c1a176290bbdb308828914"},"qaNumber":12,"question":"What are pivx denominated in?","answer":"Duffs","reward":0,"__v":0}
+{"_id":{"$oid":"57c1a176290bbdb308828914"},"qaNumber":12,"question":"What are pivx denominated in?","answer":"Pivits","reward":0,"__v":0}
 {"_id":{"$oid":"57c253e6290bbdb308828915"},"qaNumber":13,"question":"What was the original name of Pivx?","answer":"Xcoin","reward":0.02,"__v":0}
