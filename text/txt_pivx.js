@@ -12,7 +12,7 @@ const tipbotTxt = {
 
 //'help_send':
         '*send*\t\t\t\ttell the bot to send coins to someone; \n' +
-'\t\t_@PivxBot send 0.1 PIVX to @someone_ \n' +
+'\t\t_@PivxBot send 0.1 PIV to @someone_ \n' +
 '\t\t_aliases: give, tip_ \n' +
 '\t\t\t\tWorks also with major fiat currencies (use *currencies* command to see the list); \n' +
 '\t\t_@PivxBot give 4 USD to @someone_',
@@ -23,14 +23,14 @@ const tipbotTxt = {
 // 'help_withdraw':
         '*withdraw*\ttell the bot to withdraw an amount to an address. \n' +
 '\t\t\t\t\tYou can also use _all_ to withdraw your complete balance (minus the tx fee) \n' +
-'\t\t_@PivxBot withdraw 1 PIVX to D8Sf2wpaMyarjCbnwqskXaGAS6jwKSBA1B',
+'\t\t_@PivxBot withdraw 1 PIV to D8Sf2wpaMyarjCbnwqskXaGAS6jwKSBA1B',
 
 // 'help_currencies':
         '*currencies*\task the bot for a list of supported currencies.\n' +
 '\t\t_@PivxBot what currencies do you know?_ ',
 
 // 'help_price':
-        '*price*\t\t\task the bot for the Pivx price in a particular currency. Price info from coinmarketcap.\n ' +
+        '*price*\t\t\task the bot for the PIVX price in a particular currency. Price info from coinmarketcap.\n ' +
 '\t\t_@PivxBot price in USD!_ ',
 
 // 'help_pricelist':
@@ -46,7 +46,7 @@ const tipbotTxt = {
 
 // 'help_sun':
         '*sun*\t\t\tcheck the available sunshine. \n' +
-'\t\t\tEach user that has tipped another user will receive a _sunray_ (read: free Pivx) from the sun fund.',
+'\t\t\tEach user that has tipped another user will receive a _sunray_ (read: free PIVX) from the sun fund.',
 
 // 'help_quiz'
         '*quiz add*\t\tThe bot will ask to input a new quiz question and answer.\nEach question needs to be reviewed by a moderator.\n',
@@ -68,7 +68,7 @@ const tipbotTxt = {
 '\t\t_@Pivxbot whisper @narbuy stop being silly man._\n' +
 '\n\n' +
 '*sun threshold*\t set the threshold on where the balance of the sun account will be distributed\n' +
-'\t\t\t\tbetween all the users that tipped. Defaults to 5 Pivx.\n' +
+'\t\t\t\tbetween all the users that tipped. Defaults to 5 PIV.\n' +
 '\t\t_@pivxbot sun threshold 2.5 pivx_\n' +
 '\n' +
 '*sun eligible*\tSee which users are eligible for a sunray.\n' +
@@ -123,7 +123,7 @@ const tipbotTxt = {
     'ToMuchCurrencies': ': too many currencies!',
 
 // PRICE
-    'PriceBase': '1 Pivx is ',
+    'PriceBase': '1 PIV is ',
     'PriceInfoFrom': ' (price of coinmarketcap)',
     'LocationOfPriceList1': 'Hi, I\'ve posted the price information in the #',
     'LocationOfPriceList2': ' channel to prevent a lot of text in the other channels.',
@@ -163,7 +163,7 @@ const tipbotTxt = {
 // SUN
     'SunThreshold1': 'Sun threshold is: ',
     'SunThreshold2': 'Sun will shine and distribute sunrays when sun balance is more then the set threshold.',
-    'SunThresholdNotSet': 'Dear Pivx God, the Sun threshold isn\'t set yet. \n' +
+    'SunThresholdNotSet': 'Dear PIVX God, the Sun threshold isn\'t set yet. \n' +
 ' You can do that with the *sun threshold _amount_* command.',
 // 'SunTimer': 'Sunshine will be checked every *',
 // 'SunTimerUnit': ' minute(s)*',
@@ -178,9 +178,9 @@ const tipbotTxt = {
     'SunCannotFindSunBalance': 'Could not find the Sun balance for ',
     'SunReqDonation1': 'If you feel generous tip_@',
     'SunReqDonation2': 'The complete balance of _@',
-    'SunReqDonation3': '_ will be redistributed as _sunrays_ (aka free pivx).',
+    'SunReqDonation3': '_ will be redistributed as _sunrays_ (aka free PIV).',
     'SunEmpty': ':sun_behind_cloud:no sunrays available to cast. :disappointed:',
-    'SunRecieved': 'As reward of tipping your fellow Pivx user(s) you received a sunray of ',
+    'SunRecieved': 'As reward of tipping your fellow PIVX user(s) you received a sunray of ',
     'SunEligibleUsersList': '*These users have tipped* \n',
     'SunErrorResettingCounter': 'Error cannot reset counts. Inform the admin.',
     'SunCountIsReset': 'All tip count records are removed.',
@@ -263,11 +263,11 @@ const userTxt = {
     'Locked': ' , sorry you\re already doing a transaction. \n Wait a moment before starting a new one.',
 
 // GET BALANCES
-    'BaseCurrency': 'Pivx',
+    'BaseCurrency': 'PIVX',
     'BalanceIs': ' your tip jar contains: ',
     'UnconfirmedBalance1': 'you have an unconfirmed balance (less than ',
     'UnconfirmedBalance2': ' confirmations) of ',
-    'BalanceWarningHigh': 'This tip jar is filling up. Please consider withdrawing some Pivx.',
+    'BalanceWarningHigh': 'This tip jar is filling up. Please consider withdrawing some PIVX.',
 // WITHDRAW
     'Withdrawal1': 'Withdrawal of ',
     'WithdrawalTransaction': ' transaction: ',
@@ -276,7 +276,7 @@ const userTxt = {
 // SEND
     'SendPublicMessage1': ':clap: ',
     'SendPublicMessage2': ' tipped ',
-    'SendPrivateMssSendingUser': ' you\'re a great Pivx Chat user :thumbsup: \nLets see how much there is left in your tip jar now: \n',
+    'SendPrivateMssSendingUser': ' you\'re a great PIVX Chat user :thumbsup: \nLets see how much there is left in your tip jar now: \n',
     'SendPrivateMssRecievingUser1': 'Hi there ',
     'SendPrivateMssRecievingUser2': ', you just received ',
     'SendPrivateMssRecievingUser3': ' from ',

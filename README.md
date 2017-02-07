@@ -1,13 +1,13 @@
-#Pivx TipBot For Slack
+#PIVX TipBot For Slack
 Easily transfer money between team members on your Slack channel.
 
 ## Basic features
- - With a single message, send and receive Pivx
+ - With a single message, send and receive PIVX
  - A tip has no transaction fee. There are no extra cost added to your tip.
  - Get the fiat prices.
 
 ## Advanced features (can be disabled)
-- Sun: every user that tips another user is eligble of recieving form the sun fund.
+- Sun: every user that tips another user is eligble of recieving from the sun fund.
 - Quiz:
 -
 
@@ -58,36 +58,36 @@ and the `help` in that sentence will trigger displaying the help information.
 
 ## Commands / Trigger words
 ##### `help`        - *ask the bot for help*
-eg; `hey @tipbot can you show me the help info!`
+eg; `Hey @tipbot please show me the help info!`
 
 ##### `balance`     - *ask the bot for your current balance*
-eg; `hey @tipbot can you please tell me my balance`
+eg; `Hey @tipbot please tell me my balance.`
 
 ##### `send <value + unit> @someone` - *tell the bot to send coins to someone*
-eg; `@tipbot please send .001 Pivx to @bob` will send 0.001 Pivx to @bob.
+eg; `@tipbot please send .001 PIVX to @bob` will send 0.001 PIVX to @bob.
 
 This command has a few aliases which you can use; `give` and `sent`. 
-You can also use fiat currencies, they will be converted to the Pivx value.
+You can also use fiat currencies, they will be converted to the PIVX value.
 eg; `@tipbot can you give @bob 1 euro` or `@tipbot I'd like you to send @bob 0.5 usd`
 
 ##### `deposit`     - *ask the bot for a deposit address*
-eg; `@tipbot I'd like to deposit to my tip jar`
+eg; `@tipbot I'd like to deposit to my tip jar.`
 
 ##### `withdraw`    -  *tell the bot you want to withdraw to an address*
 after you've requested the withdraw the bot will confirm with you if it's OK, replying with `yes`, `ok` or `sure` will make the transaction happen.
-eg; `@tipbot I want to withdraw 0.5 Pivx to D8Sf2wpaMyarjCbnwqskXaGAS6jwKSBA1B`
+eg; `@tipbot I want to withdraw 0.5 PIVX to D8Sf2wpaMyarjCbnwqskXaGAS6jwKSBA1B`
 
 ##### `currencies` - ask the bot for a list of supported currencies. 
 eg; `_@tipbot what currencies do you know?`
 
-##### `price`      - ask the bot for the Pivx price in a particular currency. 
+##### `price`      - ask the bot for the PIVX price in a particular currency. 
 eg; `_@tipbot price in USD!` 
 
-##### `convert`    - ask the bot to convert between a particular currency and Pivx (or visa versa)
-eg; `@tipbot 1 USD to EUR!_​  or; ​_@tipbot 0.03 PIVX to GBP`
+##### `convert`    - ask the bot to convert between a particular currency and PIVX (or visa versa)
+eg; `@tipbot 1 USD to EUR!_  or; _@tipbot 0.03 PIVX to GBP`
 
 ##### `sun`       - check the available sunshine. 
-Each user that has tipped another user will receive a _sunray_ (read: free Pivx) from the sun fund.
+Each user that has tipped another user will receive a _sunray_ (read: Free PIVX) from the sun fund.
 
 ##### `quiz add`   - The bot will ask to input a new quiz question and answer.
 Each question needs to be reviewed by a moderator.
@@ -108,7 +108,7 @@ eg;        `pivxbot balance check @user`
 Use case :moderator warning.
 
 
-##### `sun threshold`  Set the threshold on where the balance of the sun account will be distributed between all the users that tipped. Defaults to 5 Pivx.
+##### `sun threshold`  Set the threshold on where the balance of the sun account will be distributed between all the users that tipped. Defaults to 5 PIVX.
 
 ##### `sun eligible`  See which users are eligible for a sunray.
 
