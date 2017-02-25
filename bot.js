@@ -14,7 +14,7 @@ let argv = parseArgs(process.argv.slice(2));
 const SLACK_TOKEN = argv['slack-token'] || process.env.TIPBOT_SLACK_TOKEN;
 const RPC_USER = argv['rpc-user'] || process.env.TIPBOT_RPC_USER;
 const RPC_PASSWORD = argv['rpc-password'] || process.env.TIPBOT_RPC_PASSWORD;
-const RPC_PORT = argv['rpc-port'] || process.env.TIPBOT_RPC_PORT || 9998;
+const RPC_PORT = argv['rpc-port'] || process.env.TIPBOT_RPC_PORT || 51470;
 const WALLET_PASSW = argv['wallet-password'] || process.env.TIPBOT_WALLET_PASSWORD;
 
 const debugMode = process.env.NODE_ENV === 'development' ? true : false;
@@ -23,6 +23,8 @@ const TIPBOT_OPTIONS = {
     WALLET_PASSW: WALLET_PASSW,
     ALL_BALANCES: true,
     OTHER_BALANCES: true,
+      ENABLE_SUN_FEATURE: false,
+    ENABLE_QUIZ_FEATURE: false,
     WARN_MODS_NEW_USER: !debugMode,
     WARN_MODS_USER_LEFT: !debugMode,
     SUN_USERNAME: 'pivxsun',
@@ -30,10 +32,10 @@ const TIPBOT_OPTIONS = {
 };
 
 let OPTIONS = {
-    PRICE_CHANNEL_NAME: debugMode ? 'bot_testing' : 'price_speculation',
-    WARN_MODS_USER_LEFT_CHANNELNAME: debugMode ? 'bot_testing' : 'moderators',
-    WARN_NEW_USER_CHANNELNAME: debugMode ? 'bot_testing' : 'pivx_chat',
-    MAIN_CHANNEL_NAME: debugMode ? 'bot_testing' : 'pivx_chat',
+    PRICE_CHANNEL_NAME: debugMode ? 'test_channel' : 'price_speculation',
+    WARN_MODS_USER_LEFT_CHANNELNAME: debugMode ? 'test_channel' : 'moderators',
+    WARN_NEW_USER_CHANNELNAME: debugMode ? 'test_channel' : 'pivx_chat',
+    MAIN_CHANNEL_NAME: debugMode ? 'test_channel' : 'pivx_chat',
 
     SHOW_RANDOM_HELP_TIMER: 720, // show a random help command every X minutes (6/12 hours = 360/720 minutes)
 
@@ -59,26 +61,42 @@ assert(RPC_PASSWORD, '--rpc-password or TIPBOT_RPC_PASSWORD is required');
 4) 'hello' = connected => setup tipbot
 */
 
-
+  debug('tipbot:bot')('starting up')
 // setup Slack Controller
 let controller = Botkit.slackbot({
-    logLevel: 4,
+    logLevel: 5,
     debug: true
     //include 'log: false' to disable logging
     //or a 'logLevel' integer from 0 to 7 to adjust logging verbosity
 });
 
-// open mongoose connection
-mongoose.connect(OPTIONS.DB,
-    { config: { autoIndex: debugMode } });  // no autoIndex in production for preformance impact
+// open mongoDB connection if needed for a feature
+const needMongoDb = TIPBOT_OPTIONS.ENABLE_SUN_FEATURE || TIPBOT_OPTIONS.ENABLE_QUIZ_FEATURE;
+if (needMongoDb) {
+    mongoose.connect(OPTIONS.DB, { config: { autoIndex: debugMode } });  // no autoIndex in production for preformance impact
+    let db = mongoose.connection;
+    db.on('error', function (err) {
+        debug('tipbot:db')('******** ERROR: unable to connect to database at ' + OPTIONS.DB + ': ' + err);
+    });
 
-let db = mongoose.connection;
-db.on('error', function (err) {
-    debug('tipbot:db')('******** ERROR: unable to connect to database at ' + OPTIONS.DB + ': ' + err);
-});
+    // database connection open =  conncect to slack
+    db.once('open', function () {
+        autoIncrement.initialize(db);
+        require('./model/tipper');  // load mongoose Tipper model
+        require('./model/quiz');// load mongoose Quiz model
+        debug('tipbot:db')('********* Database connected ********');
+        // make connnection to Slack
+        connect(controller);
 
+    });
+} else {
+    debug('tipbot:init')('No features enabled that need mongoDb.');
+    // no mongoDB needed, connect now to slack
+    connect(controller);
+}
 // connection to slack (function so it can be used to reconnect)
 function connect(controller) {
+  
     // spawns the slackbot
     controller.spawn({
         token: SLACK_TOKEN,
@@ -110,17 +128,6 @@ function connect(controller) {
 
     });
 }
-
-// database connection open =  conncect to slack
-db.once('open', function () {
-    autoIncrement.initialize(db);
-    require('./model/tipper');  // load mongoose Tipper model
-    require('./model/quiz');// load mongoose Quiz model
-    debug('tipbot:db')('********* Database connected ********');
-    // make connnection to Slack
-    connect(controller);
-
-});
 
 // connection to Slack has ended
 controller.on('rtm_close', function () {
