@@ -38,7 +38,7 @@ const tipbotTxt = {
 
 // 'help_convert':
         '*convert*\t\task the bot to convert between a particular currency and Tx (or visa versa).\n' +
-'\t\t_@DashBot 0.03 Tx to GBP_ \t or \t _@TxBot 15 EURO to Tx_\n',
+'\t\t_@TxBot 0.03 Tx to GBP_ \t or \t _@TxBot 15 EURO to Tx_\n',
 
 // 'help_rain':
 // '*rain*\t\tcheck the available rain and threshold. \n ' +
