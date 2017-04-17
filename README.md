@@ -1,8 +1,8 @@
-#PIVX TipBot For Slack
+#TX TipBot For Slack
 Easily transfer money between team members on your Slack channel.
 
 ## Basic features
- - With a single message, send and receive PIVX
+ - With a single message, send and receive TX
  - A tip has no transaction fee. There are no extra cost added to your tip.
  - Get the fiat prices.
 
@@ -18,8 +18,8 @@ Easily transfer money between team members on your Slack channel.
 
 
 ### Install TipBot
- - `git clone https://github.com/pivx-project/pivx-slack-tipbot`
- - `cd pivx-slack-tipbot`
+ - `git clone https://github.com/transferdev/tx-slack-tipbot`
+ - `cd tx-slack-tipbot`
  - `npm install`
 
 
@@ -64,10 +64,10 @@ eg; `Hey @tipbot please show me the help info!`
 eg; `Hey @tipbot please tell me my balance.`
 
 ##### `send <value + unit> @someone` - *tell the bot to send coins to someone*
-eg; `@tipbot please send .001 PIVX to @bob` will send 0.001 PIVX to @bob.
+eg; `@tipbot please send .001 TX to @bob` will send 0.001 TX to @bob.
 
 This command has a few aliases which you can use; `give` and `sent`. 
-You can also use fiat currencies, they will be converted to the PIVX value.
+You can also use fiat currencies, they will be converted to the TX value.
 eg; `@tipbot can you give @bob 1 euro` or `@tipbot I'd like you to send @bob 0.5 usd`
 
 ##### `deposit`     - *ask the bot for a deposit address*
@@ -75,19 +75,19 @@ eg; `@tipbot I'd like to deposit to my tip jar.`
 
 ##### `withdraw`    -  *tell the bot you want to withdraw to an address*
 after you've requested the withdraw the bot will confirm with you if it's OK, replying with `yes`, `ok` or `sure` will make the transaction happen.
-eg; `@tipbot I want to withdraw 0.5 PIVX to D8Sf2wpaMyarjCbnwqskXaGAS6jwKSBA1B`
+eg; `@tipbot I want to withdraw 0.5 TX to TaPgrLnmrj1b7495gWKHNq4Zpwx6HZBqyw`
 
 ##### `currencies` - ask the bot for a list of supported currencies. 
 eg; `_@tipbot what currencies do you know?`
 
-##### `price`      - ask the bot for the PIVX price in a particular currency. 
+##### `price`      - ask the bot for the TX price in a particular currency.
 eg; `_@tipbot price in USD!` 
 
-##### `convert`    - ask the bot to convert between a particular currency and PIVX (or visa versa)
-eg; `@tipbot 1 USD to EUR!_  or; _@tipbot 0.03 PIVX to GBP`
+##### `convert`    - ask the bot to convert between a particular currency and TX (or visa versa)
+eg; `@tipbot 1 USD to EUR!_  or; _@tipbot 0.03 TX to GBP`
 
 ##### `sun`       - check the available sunshine. 
-Each user that has tipped another user will receive a _sunray_ (read: Free PIVX) from the sun fund.
+Each user that has tipped another user will receive a _sunray_ (read: Free TX) from the sun fund.
 
 ##### `quiz add`   - The bot will ask to input a new quiz question and answer.
 Each question needs to be reviewed by a moderator.
@@ -101,14 +101,14 @@ Each question needs to be reviewed by a moderator.
 ##### `balance all`      show all the tip jars (must be enabled in code)
 
 ##### `balance check`    show the balance of a specific user (must be enabled in code) 
-eg;        `pivxbot balance check @user` 
+eg;        `txbot balance check @user`
 
 
-##### `whisper`         Send a message in a private channel to a user as pivxbot.
+##### `whisper`         Send a message in a private channel to a user as txbot.
 Use case :moderator warning.
 
 
-##### `sun threshold`  Set the threshold on where the balance of the sun account will be distributed between all the users that tipped. Defaults to 5 PIVX.
+##### `sun threshold`  Set the threshold on where the balance of the sun account will be distributed between all the users that tipped. Defaults to 5 TX.
 
 ##### `sun eligible`  See which users are eligible for a sunray.
 
@@ -121,7 +121,7 @@ Use case :moderator warning.
 
 ##### `quiz delete _question number_`   Delete a question.
 
-##### `quiz reward _question number_`   Set/change reward for a question (also approves the question). @pivxbot will ask amount.
+##### `quiz reward _question number_`   Set/change reward for a question (also approves the question). @txbot will ask amount.
 
 ##### `quiz star`    Start a quiz.
 

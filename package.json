@@ -1,7 +1,7 @@
 {
   "name": "slack-tipbot-node",
   "version": "2.1.4",
-  "description": "Pivx Slack TipBot - Using local wallet",
+  "description": "Tx Slack TipBot - Using local wallet",
   "main": "bot.js",
   "dependencies": {
     "async": "^2.0.0",
@@ -23,18 +23,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pivx-project/slack-tipbot-PIVX"
+    "url": "https://github.com/transferdev/tx-slack-tipbot"
   },
   "keywords": [
     "slack",
     "slackbot",
     "tipbot",
-    "pivx"
+    "tx"
   ],
   "author": " Naruby Riverlione < NarubyRiverlione@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pivx-project/slack-tipbot-PIVX/issues"
+    "url": "https://github.com/transferdev/tx-slack-tipbot/issues"
   },
   "snyk": true
 }
