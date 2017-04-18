@@ -66,8 +66,8 @@ const tipbotTxt = {
     'HelpRandom1': 'Here is an example of one of my commands, type "@txbot help" for my full list. ',
 // 'HelpRandom2': 'You can get information about all my other cool tricks via the *help* command. \n Have a nice day !',
 // NEW USER
-    'WarningNewUser1': 'The new user ',
-    'WarningNewUser2': ' has joined ! Go and greet them, plz.',
+    'WarningNewUser1': ' ',
+    'WarningNewUser2': ' has joined the TX Project! Welcome them! ',
 // USER LEFT
     'WarnUserLeft1': 'The user ',
     'WarnUserLeft2': ' has left the slack team. Think about his/her tip jar.',
