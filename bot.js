@@ -14,7 +14,7 @@ let argv = parseArgs(process.argv.slice(2));
 const SLACK_TOKEN = argv['slack-token'] || process.env.TIPBOT_SLACK_TOKEN;
 const RPC_USER = argv['rpc-user'] || process.env.TIPBOT_RPC_USER;
 const RPC_PASSWORD = argv['rpc-password'] || process.env.TIPBOT_RPC_PASSWORD;
-const RPC_PORT = argv['rpc-port'] || process.env.TIPBOT_RPC_PORT || 17170;
+const RPC_PORT = argv['rpc-port'] || process.env.TIPBOT_RPC_PORT || 17171;
 const WALLET_PASSW = argv['wallet-password'] || process.env.TIPBOT_WALLET_PASSWORD;
 
 const debugMode = process.env.NODE_ENV === 'development' ? true : false;

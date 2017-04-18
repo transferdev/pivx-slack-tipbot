@@ -25,33 +25,12 @@ const tipbotTxt = {
 '\t\t\t\t\tYou can also use _all_ to withdraw your complete balance (minus the tx fee) \n' +
 '\t\t_@TxBot withdraw 1 TX to TaPgrLnmrj1b7495gWKHNq4Zpwx6HZBqyw',
 
-// 'help_currencies':
-        '*currencies*\task the bot for a list of supported currencies.\n' +
-'\t\t_@TxBot what currencies do you know?_ ',
 
-// 'help_price':
-        '*price*\t\t\task the bot for the Tx price in a particular currency. Price info from coinmarketcap.\n ' +
-'\t\t_@TxBot price in USD!_ ',
-
-// 'help_pricelist':
-        '*priceticker*\t\tshows all the known prices. Use * priceticker short* for a limited list.',
-
-// 'help_convert':
-        '*convert*\t\task the bot to convert between a particular currency and Tx (or visa versa).\n' +
-'\t\t_@TxBot 0.03 Tx to GBP_ \t or \t _@TxBot 15 EURO to Tx_\n',
 
 // 'help_rain':
 // '*rain*\t\tcheck the available rain and threshold. \n ' +
 // '\t\tAdmins can also release the rain with the *rain now* command.\n',
 
-// 'help_sun':
-        '*sun*\t\t\tcheck the available sunshine. \n' +
-'\t\t\tEach user that has tipped another user will receive a _sunray_ (read: free Tx) from the sun fund.',
-
-// 'help_quiz'
-        '*quiz add*\t\tThe bot will ask to input a new quiz question and answer.\nEach question needs to be reviewed by a moderator.\n',
-// + '\n\t\tUse _quiz list_ and _quiz review_ to get the question number for the next commands.\n' +
-        '*quiz answer*\t\tPost an answer to a quiz question.\n'
     ],
 
     'helpAdminOnly':
@@ -67,21 +46,6 @@ const tipbotTxt = {
 '\t\t\t\t\tUse case :moderator warning.\n' +
 '\t\t_@txbot whisper @narbuy stop being silly man._\n' +
 '\n\n' +
-'*sun threshold*\t set the threshold on where the balance of the sun account will be distributed\n' +
-'\t\t\t\tbetween all the users that tipped. Defaults to 5 TX.\n' +
-'\t\t_@txbot sun threshold 2.5 tx_\n' +
-'\n' +
-'*sun eligible*\tSee which users are eligible for a sunray.\n' +
-'\n' +
-'*sun reset*\t\tReset all tip counts, not needed normally as tip counters are reset when sun is shining.' +
-'\n' +
-'*quiz list*\t\tShow all approved questions.\n' +
-'*quiz review*\tList all questions that need to be reviewed (reward = 0).\n' +
-'*quiz delete _question number_*\tDelete a question.\n' +
-'*quiz reward _question number_*\tSet/change reward for a question (also approves the question). @txbot will ask amount.\n' +
-'*quiz start*\t\tStart a quiz.\n' +
-'*quiz abort*\t\tStop a quiz without showing results.\n'+
-'*quiz next*\t\tSkip the current question (if no one finds the answer).\n',
 
     'tx_fee': 'The transaction fee is set to ',
     'HelpRandom1': 'Here is an example of one of my commands, type "@txbot help" for my full list. ',
