@@ -46,6 +46,21 @@ const tipbotTxt = {
 '\t\t\t\t\tUse case :moderator warning.\n' +
 '\t\t_@txbot whisper @narbuy stop being silly man._\n' +
 '\n\n' +
+'*sun threshold*\t set the threshold on where the balance of the sun account will be distributed\n' +
+'\t\t\t\tbetween all the users that tipped. Defaults to 5 TX.\n' +
+'\t\t_@txbot sun threshold 2.5 tx_\n' +
+'\n' +
+'*sun eligible*\tSee which users are eligible for a sunray.\n' +
+'\n' +
+'*sun reset*\t\tReset all tip counts, not needed normally as tip counters are reset when sun is shining.' +
+'\n' +
+'*quiz list*\t\tShow all approved questions.\n' +
+'*quiz review*\tList all questions that need to be reviewed (reward = 0).\n' +
+'*quiz delete _question number_*\tDelete a question.\n' +
+'*quiz reward _question number_*\tSet/change reward for a question (also approves the question). @txbot will ask amount.\n' +
+'*quiz start*\t\tStart a quiz.\n' +
+'*quiz abort*\t\tStop a quiz without showing results.\n'+
+'*quiz next*\t\tSkip the current question (if no one finds the answer).\n',
 
     'tx_fee': 'The transaction fee is set to ',
     'HelpRandom1': 'Here is an example of one of my commands, type "@txbot help" for my full list. ',
